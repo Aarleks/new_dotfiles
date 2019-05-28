@@ -1,0 +1,133 @@
+# Modular hotkeys for tiling window managers (e.g. i3, DWM)
+
+##############
+## MOD KEYS ##
+##############
+
+## Open $TERMINAL instance
+super + Return
+    $TERMINAL
+
+super + shift + Return
+    $TERMINAL -e $EDITOR ~/Dropbox/vimwiki/index.md
+
+# bindsym $mod+BackSpace
+super + shift + BackSpace
+    prompt "Are you sure you want to reboot?" "sudo reboot"
+
+
+
+super + shift + a
+	$TERMINAL -e alsamixer; refbar
+super + shift + c
+	mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --title='mpvfloat' /dev/video0
+
+
+
+## ALPHA MODS ##
+
+#super + q
+#super + shift + q
+
+super + w
+    $BROWSER
+
+super + shift + w
+    $TERMINAL -e sudo wifi-menu
+
+super + e
+    $TERMINAL -e neomutt
+#super + shift + e
+
+super + r
+    $TERMINAL -e lf
+#super + Shift +r
+
+super + i
+    $TERMINAL -e htop
+#bindsym $mod+Shift+i		resize grow height 10 px or 10 ppt
+#
+#bindsym $mod+o			sticky toggle
+#bindsym $mod+Shift+o		resize grow width 10 px or 10 ppt
+#
+#bindsym $mod+p			exec $pause
+#bindsym $mod+Shift+p		exec mypaint
+#
+#bindsym $mod+a			[instance="math"] scratchpad show; [instance="math"] move position center
+#bindsym $mod+Shift+a		exec $term -e ncpamixer
+#
+#bindsym $mod+s			gaps inner current plus 5
+#bindsym $mod+Shift+s		gaps inner current minus 5
+#
+super + d
+    rofi -show run
+#bindsym $mod+Shift+d		gaps inner current set 0; gaps outer current set 0
+#
+#bindsym $mod+f			fullscreen toggle
+###bindsym $mod+Shift+f
+#
+#bindsym $mod+g			workspace prev
+#bindsym $mod+Shift+g		exec --no-startup-id testshell.sh
+#
+#bindsym $mod+h			focus left
+#bindsym $mod+Shift+h		move left 30
+#
+#bindsym $mod+j			focus down
+#bindsym $mod+Shift+j		move down 30
+#
+#bindsym $mod+k			focus up
+#bindsym $mod+Shift+k		move up 30
+#
+#bindsym $mod+l			focus right
+#bindsym $mod+Shift+l		move right 30
+#
+#bindsym $mod+z			gaps outer current plus 5
+#bindsym $mod+Shift+z		gaps outer current minus 5
+#
+super + x
+    ~/.config/i3/lock.sh
+super + shift + x
+    prompt "Are you sure you want to shutdown?" "sudo -A shutdown -h now"
+#
+super + c
+    camtoggle
+#bindsym $mod+Shift+c		exec ~/.scripts/kblayout.sh
+#
+super + v
+        $TERMINAL -e ncmpcpp -s visualizer
+#bindsym $mod+Shift+v		exec projectM-pulseaudio
+#
+#bindsym $mod+b			floating toggle; sticky toggle; exec --no-startup-id bottomleft
+#bindsym $mod+Shift+b		exec --no-startup-id blender; workspace $ws6
+#
+super + n
+	$TERMINAL -e newsboat
+#bindsym $mod+Shift+n
+
+super + m
+	$TERMINAL -e ncmpcpp
+#bindsym $mod+Shift+m		exec $mute
+#
+#
+super + Insert
+    showclip
+## #---Workspace Bindings---# #
+#bindsym $mod+Home		workspace $ws1
+#bindsym $mod+Shift+Home		move container to workspace $ws1
+#bindsym $mod+End		workspace $ws10
+#bindsym $mod+Shift+End		move container to workspace $ws10
+#bindsym $mod+Prior		workspace prev
+#bindsym $mod+Shift+Prior	move container to workspace prev
+#bindsym $mod+Next		workspace next
+#bindsym $mod+Shift+Next		move container to workspace next
+#bindsym $mod+Tab		workspace back_and_forth
+#bindsym $mod+XF86Back		workspace prev
+###bindsym $mod+Shift+XF86Back
+#bindsym $mod+XF86Forward	workspace next
+###bindsym $mod+Shift+XF86Forward
+#bindsym $mod+semicolon		workspace next
+#bindsym $mod+apostrophe		split horizontal ;; exec $term
+#bindsym $mod+slash		split vertical ;; exec $term
+#bindsym $mod+Shift+slash	kill
+#bindsym $mod+backslash		workspace back_and_forth
+#
