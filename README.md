@@ -16,19 +16,18 @@ The dotfiles are modular in the sense that they assume the following are install
 
 There are a bunch of files included here to make instant setup easy, but they assume the relevant programs are installed.
 
-NeoVim
-Suckless Stuff
-SXHKD
-LF
-NeoMutt
-Zsh
-Newsboat
-Ncmpcpp
-MPD
+* NeoVim
+* Suckless Stuff
+* SXHKD
+* LF
+* NeoMutt
+* Zsh
+* Newsboat
+* Ncmpcpp
+* MPD
 
 ## Dependencies
 
 * Git
 * A terminal emulator that can deal with unicode glyphs (not URXVT as I found out)
 * NerdFonts for glyphs in promps and file managers
-* 
