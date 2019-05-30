@@ -24,7 +24,8 @@ Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2'
-Plug 'kovetskiy/sxhkd-vim'
+"Plug 'kovetskiy/sxhkd-vim'
+Plug 'baskerville/vim-sxhkdrc'
 call plug#end()
 
 
@@ -110,10 +111,14 @@ let g:lightline = {
 	    \ 'colorscheme': 'solarized',
 	    \ 'active': {
 	    \   'left': [ [ 'mode', 'paste' ],
-	    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+	    \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
+	    \   'right': [['lines'], ['filetype'], ['fileencoding', 'fileformat']]
 	    \ },
 	    \ 'component_function': {
 	    \    'gitbranch': 'fugitive#head'
+	    \ },
+	    \ 'component': {
+	    \    'lines': 'ℓ %l/%L'
 	    \ },
 	    \ }
 
